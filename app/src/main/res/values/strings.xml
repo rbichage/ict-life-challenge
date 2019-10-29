@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ICTLifeSample</string>
+
+    <string-array name="personality_types">
+        <item>I like to be casual and down to earth, I love comfort and easy to care for clothes.</item>
+        <item>I am organised and practical and prefer to fill my wardrobe with versatile investment pieces.</item>
+        <item>I am spirited and self expressed and originality is key.</item>
+        <item>I am bold and like to stand out in a crowd and wear striking clothes that make a statement.</item>
+        <item>I am sensitive, gentle and supportive and love feminine details such as lace, gathers and frills.</item>
+    </string-array>
+</resources>
