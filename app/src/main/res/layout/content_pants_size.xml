@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvShirtSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="4dp"
+        android:text="Pant size:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <Spinner
+        android:id="@+id/shirt_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/shirt_sizes"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="@id/tvShirtSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toEndOf="@id/tvShirtSize"
+        app:layout_constraintTop_toTopOf="@id/tvShirtSize"
+        app:layout_constraintVertical_bias="0.52"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvNeckSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:padding="4dp"
+        android:text="Waist size(cm.):"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvShirtSize"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvArmLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:padding="4dp"
+        android:text="Inseam(cm.):"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNeckSize"
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNeckSize"
+        app:layout_constraintEnd_toEndOf="@+id/shirt_spinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/shirt_spinner"
+        app:layout_constraintTop_toTopOf="@+id/tvNeckSize"
+        android:textAlignment="center"
+        android:maxLength="2"
+        />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/tvArmLength"
+        app:layout_constraintEnd_toEndOf="@+id/shirt_spinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="@+id/tvArmLength"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">ICTLifeSample</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="proceed">CONTINUE</string>
 
     <string-array name="personality_types">
         <item>I like to be casual and down to earth, I love comfort and easy to care for clothes.</item>
@@ -7,5 +10,12 @@
         <item>I am spirited and self expressed and originality is key.</item>
         <item>I am bold and like to stand out in a crowd and wear striking clothes that make a statement.</item>
         <item>I am sensitive, gentle and supportive and love feminine details such as lace, gathers and frills.</item>
+    </string-array>
+
+    <string-array name="shirt_sizes">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Extra Large</item>
     </string-array>
 </resources>
